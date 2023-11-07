@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jet Fusion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,800&family=Volkhov&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Volkhov', serif;
+            text-align: center;
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-navbar-container {
+            background-color: #0a427a;
+            background-size: cover;
+            padding: 0;
+            height: 250px;
+        }
+
+        .navbar {
+            background-color: transparent !important;
+            color: black;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: rgba(220, 195, 9, 0.825) !important;
+        }
+
+        header {
+            color: rgb(0, 0, 0);
+            background-color: transparent;
+            text-align: center;
+        }
+
+        #records {
+            margin-top: 7%;
+        }
+
+        footer {
+            background-color: #ffffff;
+            color: #282727;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        #image-link {
+            transition: opacity 0.3s;
+        }
+
+        #image-link:hover img {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-navbar-container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html" style="color: #ffc506;">Jet Fusion</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <i class="fas fa-bars" style="color: #dbb128;"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Our Jets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reviews.html">Reviews</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header class="container mt-4">
+            <h1 style="color: #f6cf0b;">Welcome to the World of Luxury Private Jets!</h1>
+        </header>
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Gulfstream-GIV-Exterior-Sunset.jpg" class="card-img-top" alt="Private Jet 1" style="height: 300px;"> <!-- Replace 'private_jet1.jpg' with your jet image -->
+                    <div class="card-body">
+                        <h3 class="card-title">Luxury Jet</h3>
+                        <p class="card-text">Explore our top-of-the-line private jet. Contact us for pricing.</p>
+                        <a href="contact.html" class="btn btn-outline-dark">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="licensed-image.jpg" class="card-img-top" alt="Private Jet 2" style="height: 300px;"> <!-- Replace 'private_jet2.jpg' with your jet image -->
+                    <div class="card-body">
+                        <h3 class="card-title">Executive Jet</h3>
+                        <p class="card-text">Fly in style with our executive jet. Contact us for pricing.</p>
+                        <a href="contact.html" class="btn btn-outline-dark">Contact Us</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class = "card">
+                    <img src="chartered-private-jets.webp" class="card-img-top" alt="Private Jet 3" style="height: 300px;"> <!-- Replace 'private_jet3.jpg' with your jet image -->
+                    <div class="card-body">
+                        <h3 class="card-title">Private Jet Survivor</h3>
+                        <p class="card-text">Experience the pinnacle of luxury with our private jet. Contact us for pricing.</p>
+                        <a href="contact.html" class="btn btn-outline-dark">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="mt-5">
+        <div class="container">
+            <p>&copy; Jet Fusion</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        const jetInfo = [
+            {
+                name: "Luxury Jet",
+                description: "Explore our top-of-the-line private jet. Contact us for pricing.",
+                image: "Gulfstream-GIV-Exterior-Sunset.jpg",
+            },
+            {
+                name: "Executive Jet",
+                description: "Fly in style with our executive jet. Contact us for pricing.",
+                image: "licensed-image.jpg",
+            },
+            {
+                name: "Private Jet Survivor",
+                description: "Experience the pinnacle of luxury with our private jet. Contact us for pricing.",
+                image: "chartered-private-jets.webp",
+            },
+        ];
+
+        const cardElements = document.querySelectorAll(".card");
+
+        cardElements.forEach((card, index) => {
+            card.addEventListener("mouseover", () => {
+                card.style.transform = "scale(1.1)";
+            });
+
+            card.addEventListener("mouseout", () => {
+                card.style.transform = "scale(1)";
+            });
+        });
+
+
+        const audio = new Audio("cashier-quotka-chingquot-sound-effect-129698.mp3");
+
+        cardElements.forEach((card, index) => {
+            card.addEventListener("click", () => {
+                audio.play();
+            });
+        });
+
+        $(".btn").hover(function() {
+        $(this).addClass("animate__animated animate__pulse");
+    }, function() {
+        $(this).removeClass("animate__animated animate__pulse");
+    });
+
+    $(".btn").click(function() {
+        $(this).addClass("animate__animated animate__bounce");
+        setTimeout(() => {
+            $(this).removeClass("animate__animated animate__bounce");
+        }, 1000);
+    });
+    </script>
+</body>
+</html>
